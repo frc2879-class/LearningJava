@@ -28,7 +28,7 @@ public class HelloWorld {
 	
 	/**
 	 * This may look like gibberish, but it marks what is supposed to happen
-	 * when the program starts.  Don't worry to much about what it means; we'll
+	 * when the program starts.  Don't worry too much about what it means; we'll
 	 * get to that in due course.
 	 * 
 	 * @param args The command line parameters.
