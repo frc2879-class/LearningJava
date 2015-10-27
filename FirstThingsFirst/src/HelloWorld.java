@@ -36,8 +36,8 @@ public class HelloWorld {
 	 * @param args The command line parameters.
 	 * @throws IOException 
 	 */
-	public static void main( String[] args ) throws IOException {
-		System.out.println( "Hello world!" );
+	public static void main(String[] args) throws IOException {
+		System.out.println("Hello world!");
 		byte[] buffer = new byte[255];
 		System.out.print("What's your name? ");
 		System.in.read(buffer);
