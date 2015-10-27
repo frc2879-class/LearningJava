@@ -35,5 +35,10 @@ public class HelloWorld {
 	 */
 	public static void main( String[] args ) {
 		System.out.println( "Hello world!" );
+		byte[] buffer = new buffer[255];
+		System.out.print("What's your name? ");
+		System.in.read(buffer);
+		String name = new String(buffer);
+		System.out.println("Hello, " + name);
 	}
 }
