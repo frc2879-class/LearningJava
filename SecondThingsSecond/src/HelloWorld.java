@@ -1,7 +1,7 @@
 import java.io.IOException;
 
 /*
-    The traditional first program.
+    The traditional second program.
     Copyright (C) 2015  Eric Deiman
 
     This program is free software: you can redistribute it and/or modify
@@ -20,8 +20,9 @@ import java.io.IOException;
  */
 
 /**
- * It's tradition that the first program a person writes in a new language
- * prints "Hello world!" to the console.  That's what this class will do.
+ * It's tradition that the second program a person writes in a new language
+ * plays a game with the user on the console.  That's what we'll expand this 
+ * class to do.
  *
  * @author eric
  *
@@ -29,7 +30,7 @@ import java.io.IOException;
 public class HelloWorld {
 	
 	/**
-	 * This may look like gibberish, but it marks what is supposed to happen
+	 * This may still look like gibberish, but it marks what is supposed to happen
 	 * when the program starts.  Don't worry too much about what it means; we'll
 	 * get to that in due course.
 	 * 
