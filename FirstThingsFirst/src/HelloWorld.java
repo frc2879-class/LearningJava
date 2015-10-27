@@ -1,3 +1,5 @@
+import java.io.IOException;
+
 /*
     The traditional first program.
     Copyright (C) 2015  Eric Deiman
@@ -32,8 +34,14 @@ public class HelloWorld {
 	 * get to that in due course.
 	 * 
 	 * @param args The command line parameters.
+	 * @throws IOException 
 	 */
-	public static void main( String[] args ) {
+	public static void main( String[] args ) throws IOException {
 		System.out.println( "Hello world!" );
+		byte[] buffer = new byte[255];
+		System.out.print("What's your name? ");
+		System.in.read(buffer);
+		String name = new String(buffer);
+		System.out.println("Hello, " + name);
 	}
 }
