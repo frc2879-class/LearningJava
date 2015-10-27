@@ -41,7 +41,7 @@ public class HelloWorld {
 		byte[] buffer = new byte[255];
 		System.out.print("What's your name? ");
 		System.in.read(buffer);
-		String name = new String(buffer);
-		System.out.println("Hello, " + name);
+		String name = new String(buffer).trim();
+		System.out.println("Hello there, " + name + "!");
 	}
 }
