@@ -1,5 +1,6 @@
 import java.io.IOException;
 import java.util.Random;
+import java.util.Scanner;
 
 /*
     The traditional second program.
@@ -87,6 +88,12 @@ public class HelloWorld {
 		// This is weird, so I wrote more about it in the wiki page for this
 		// lesson.
 		guess = guess + 1;
-		
+
+		// In the code we wrote above, we got keyboard input by using
+		// System.in.read( buffer ), but that was kind of tedious because we had
+		// to make the buffer just store the keys the user typed. So, one of the
+		// people who make Java created a less tedious way to get the stuff a user types
+		// on the keyboard.  Introducing, Scanner:
+		Scanner keyboard = new Scanner( System.in );
 	}
 }
