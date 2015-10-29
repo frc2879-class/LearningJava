@@ -68,12 +68,12 @@ public class HelloWorld {
 	/**
 	 * This is called a method. In Java, when you have several lines of code
 	 * that work together and that do something that you'll want to do more than
-	 * once (or that deserve their own name), you make a method out of it.
+	 * once (or that deserve their own name), you make a method for of it.
 	 * 
 	 * This is a computerized version of the number guessing game. A pair of
-	 * younger kids play a where one picks a number and the other tries to guess
-	 * it. In this version of the game, the computer will guess a number and the
-	 * user tries to guess it.
+	 * younger kids play a game where one picks a number and the other tries to
+	 * guess it. In this version of the game, the computer will pick a number
+	 * and the user tries to guess it.
 	 * 
 	 * @throws IOException
 	 */
@@ -105,19 +105,17 @@ public class HelloWorld {
 		// loop:
 		while( !playerGuessed ) {
 			// Give the user a prompt so they know what to do.
-			System.out.print( "Guess my number: " );
+			System.out.print( "Try to guess my number: " );
 			// When we use Scanner, we get the next number the user types by
-			// using
-			// nextInt(). If we wanted to get something else, like all that the
-			// user
-			// types until the next time they press enter, we could use
-			// netLine().
+			// using nextInt(). If we wanted to get something else, like all
+			// that the user types until the next time they press enter, we
+			// could use netLine().
 			int playersGuess = keyboard.nextInt();
 			// If the number that the user guesses is the same as the number
 			// the computer picked, playerGuessed will be true.
 			playerGuessed = playersGuess == myPick;
-			// If the user did not guess the number that the computer picked, give
-			// the user a hint.
+			// If the user did not guess the number that the computer picked,
+			// give the user a hint.
 			if( playersGuess < myPick ) {
 				System.out.println( "Nope, too low!" );
 			} else if( myPick < playersGuess ) {
