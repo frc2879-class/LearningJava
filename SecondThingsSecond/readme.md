@@ -1,5 +1,9 @@
-I don't have time to write much now, but I'll update this space as I find time.
+This is the folder for the SecondThingsSecond project that'll be covering in the next 
+couple of meetings.
 
-In the mean time, you might recognize the file in the source folder as the file from the FistThingsFirst folder.  We're going to be expanding it in this lesson.  In particular, we're going to be adding a game.
+You might recognize the file in the source folder as the file from the FistThingsFirst 
+folder.  We're going to be expanding it in this lesson.  In particular, we're going to be 
+adding a game.
 
-[Click here to find more information on the wiki page for this lesson.](../../../wiki/SecondThingsSecond)
+[Click here to find more information on the wiki page for this lesson.]
+(../../../wiki/SecondThingsSecond)
