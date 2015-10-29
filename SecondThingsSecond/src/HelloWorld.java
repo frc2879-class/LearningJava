@@ -57,11 +57,10 @@ public class HelloWorld {
 		// the group. The lines below are all related to playing the game.
 		System.out.print( "Shall we play a game? " );
 		System.in.read( buffer );
-		if ( buffer[ 0 ] == 'Y' || buffer[ 0 ] == 'y' ) {
+		if( buffer[ 0 ] == 'Y' || buffer[ 0 ] == 'y' ) {
 			// I put the code to play the game in what's called a method. You
 			// can find it lower down in this file. Look for the phrase
-			// "playGame" to
-			// find it.
+			// "playGame" to find it.
 			playGame();
 		}
 	}
@@ -83,17 +82,52 @@ public class HelloWorld {
 		int upperBound = 10;
 		// Computers can do things that are (kind of) random.
 		Random randomNumberMaker = new Random();
-		int guess = randomNumberMaker.nextInt( upperBound );
+		int myPick = randomNumberMaker.nextInt( upperBound );
 
 		// This is weird, so I wrote more about it in the wiki page for this
 		// lesson.
-		guess = guess + 1;
+		myPick = myPick + 1;
 
 		// In the code we wrote above, we got keyboard input by using
 		// System.in.read( buffer ), but that was kind of tedious because we had
 		// to make the buffer just store the keys the user typed. So, one of the
-		// people who make Java created a less tedious way to get the stuff a user types
-		// on the keyboard.  Introducing, Scanner:
+		// people who make Java created a less tedious way to get the stuff a
+		// user types on the keyboard. Introducing, Scanner:
 		Scanner keyboard = new Scanner( System.in );
+
+		// A boolean can be 'true' or 'false' and nothing else. I start it out
+		// as false because the player has not yet guessed the computers number.
+		boolean playerGuessed = false;
+
+		// Sometimes, we want the computer to do the same thing over and over
+		// again. There are several ways we can get the computer to repeat
+		// things, and this case we're going to use what's called a while
+		// loop:
+		while( !playerGuessed ) {
+			// Give the user a prompt so they know what to do.
+			System.out.print( "Guess my number: " );
+			// When we use Scanner, we get the next number the user types by
+			// using
+			// nextInt(). If we wanted to get something else, like all that the
+			// user
+			// types until the next time they press enter, we could use
+			// netLine().
+			int playersGuess = keyboard.nextInt();
+			// If the number that the user guesses is the same as the number
+			// the computer picked, playerGuessed will be true.
+			playerGuessed = playersGuess == myPick;
+			// If the user did not guess the number that the computer picked, give
+			// the user a hint.
+			if( playersGuess < myPick ) {
+				System.out.println( "Nope, too low!" );
+			} else if( myPick < playersGuess ) {
+				System.out.println( "Nope, too high!" );
+			}
+		}
+
+		System.out.println( "Great, you guessed it!" );
+		// We need to tell the scanner when we're done using it.
+		keyboard.close();
 	}
+
 }
