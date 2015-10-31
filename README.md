@@ -18,6 +18,6 @@ I've run into problems running Eclipse on my laptop with Ubuntu.  I found a few 
 
 > eclipse -vmargs -Xmx2048M -XX:MaxPermSize=256M
 
-The `-vmargs` switch tells eclipse that the switches that follow it are to be passed to the Java Virtual Machine.  The `-Xmx2048M` switch tells the JVM to use 2048 MB (or 2 GB) of system RAM.  
+The `-vmargs` switch tells eclipse that the switches that follow it are to be passed to the Java Virtual Machine.  The `-Xmx2048M` switch tells the JVM to use 2048 MB (or 2 GB) of the 4 GB system RAM on my computer.  
 
 The `-XX:MaxPermSize=256M` switch is a little more complicated to explain.  In a nutshell, the JVM divides up memory into regions based on how frequently memory is used.  There's a region of memory that's always used and this switch sets aside 256 MB of memory for that region.
