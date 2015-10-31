@@ -12,3 +12,12 @@ programming our robots.
 
 The wiki link (the book-like icon to the right) has more information on the lessons.  [Or, click here to jump to the main wiki page.]
 (../../wiki/)
+
+#### For Linux Users
+I've run into problems running Eclipse on my laptop with Ubuntu.  I found a few settings that help improve the experience.  I have a shell script that I use to run Eclipse that looks like this:
+
+> eclipse -vmargs -Xmx2048M -XX:MaxPermSize=256M
+
+The `-vmargs` switch tells eclipse that the switches that follow it are to be passed to the Java Virtual Machine.  The `-Xmx2048M` switch tells the JVM to use 2048 MB (or 2 GB) of system RAM.  
+
+The `-XX:MaxPermSize=256M` switch is a little more complicated to explain.  In a nutshell, the JVM divides up memory into regions based on how frequently memory is used.  There's a region of memory that's always used and this switch sets aside 256 MB of memory for that region.
