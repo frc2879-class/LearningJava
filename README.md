@@ -11,4 +11,4 @@ This repository will also hold lessons and code skeletons for other related tool
 programming our robots.
 
 The wiki link (the book-like icon to the right) has more information on the lessons.  [Or, click here to jump to the main wiki page.]
-(../../../wiki/)
+(../../wiki/)
