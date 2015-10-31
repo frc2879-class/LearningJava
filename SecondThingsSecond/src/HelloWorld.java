@@ -52,8 +52,8 @@ public class HelloWorld {
 		String name = new String( buffer ).trim();
 		System.out.println( "Hello there, " + name + "!" );
 
-		// The above code all works together to read a persons name and display
-		// it on the console, so it has empty line before the group and after
+		// The above code all works together to read a person's name and display
+		// it on the console, so it has an empty line before the group and after
 		// the group. The lines below are all related to playing the game.
 		System.out.print( "Shall we play a game? " );
 		System.in.read( buffer );
