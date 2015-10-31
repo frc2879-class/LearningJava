@@ -67,7 +67,7 @@ public class HelloWorld {
 
 	/**
 	 * This is called a method. In Java, when you have several lines of code
-	 * that work together and that do something that you'll want to do more than
+	 * that work together to do something that you'll want to do more than
 	 * once (or that deserve their own name), you make a method for of it.
 	 * 
 	 * This is a computerized version of the number guessing game. A pair of
@@ -90,24 +90,28 @@ public class HelloWorld {
 
 		// In the code we wrote above, we got keyboard input by using
 		// System.in.read( buffer ), but that was kind of tedious because we had
-		// to make the buffer just store the keys the user typed. So, one of the
+		// to make the buffer just store the keys the user typed and then 
+		// convert the buffer into a String. So, one of the
 		// people who make Java created a less tedious way to get the stuff a
 		// user types on the keyboard. Introducing, Scanner:
 		Scanner keyboard = new Scanner( System.in );
 
-		// A boolean can be 'true' or 'false' and nothing else. I start it out
-		// as false because the player has not yet guessed the computers number.
+		// A boolean can be 'true' or 'false' and nothing else. This will track it
+		// user has guessed the computer's nubmer.  I start it out
+		// as false because the player has not yet guessed the computer's number.
 		boolean playerGuessed = false;
 
 		// Sometimes, we want the computer to do the same thing over and over
-		// again. There are several ways we can get the computer to repeat
-		// things, and this case we're going to use what's called a while
-		// loop:
+		// again, repeatedly. Sometimes, we want the computer to do the same thing 
+		// over and over again, repeatedly.  There are several ways we can get the 
+		// computer to repeat things, and this case we're going to use what's 
+		// called a while loop:
 		while( !playerGuessed ) {
 			// Give the user a prompt so they know what to do.
 			System.out.print( "Try to guess my number: " );
 			// When we use Scanner, we get the next number the user types by
-			// using nextInt(). If we wanted to get something else, like all
+			// using nextInt(). There are other things we can use.  For example,
+			// If we wanted to get something else, like all
 			// that the user types until the next time they press enter, we
 			// could use netLine().
 			int playersGuess = keyboard.nextInt();
@@ -123,6 +127,7 @@ public class HelloWorld {
 			}
 		}
 
+		// The user has guess the computer's number, so let them know.
 		System.out.println( "Great, you guessed it!" );
 		// We need to tell the scanner when we're done using it.
 		keyboard.close();
