@@ -96,8 +96,8 @@ public class HelloWorld {
 		// user types on the keyboard. Introducing, Scanner:
 		Scanner keyboard = new Scanner( System.in );
 
-		// A boolean can be 'true' or 'false' and nothing else. This will track it
-		// user has guessed the computer's nubmer.  I start it out
+		// A boolean can be 'true' or 'false' and nothing else. This will track if
+		// the user has guessed the computer's number.  I start it out
 		// as false because the player has not yet guessed the computer's number.
 		boolean playerGuessed = false;
 
@@ -122,7 +122,8 @@ public class HelloWorld {
 			// give the user a hint.
 			if( playersGuess < myPick ) {
 				System.out.println( "Nope, too low!" );
-			} else if( myPick < playersGuess ) {
+			} 
+			else if( myPick < playersGuess ) {
 				System.out.println( "Nope, too high!" );
 			}
 		}
