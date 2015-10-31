@@ -21,3 +21,5 @@ I've run into problems running Eclipse on my laptop with Ubuntu.  I found a few 
 The `-vmargs` switch tells eclipse that the switches that follow it are to be passed to the Java Virtual Machine.  The `-Xmx2048M` switch tells the JVM to use 2048 MB (or 2 GB) of the 4 GB system RAM on my computer.  
 
 The `-XX:MaxPermSize=256M` switch is a little more complicated to explain.  In a nutshell, the JVM divides up memory into regions based on how frequently memory is used.  There's a region of memory that's always used and this switch sets aside 256 MB of memory for that region.
+
+There's also an `eclipse.ini` file that stores these settings (and more) in the directory where you installed the Eclipse files.  Modifying that file to use the above settings will also work.
